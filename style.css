@@ -1,0 +1,567 @@
+body {
+  opacity: 30;
+  width: 1200px;
+  background: rgb(60,241,42);
+background: linear-gradient(90deg, rgba(60,241,42,1) 0%, rgba(4,45,179,1) 50%, rgba(80,191,249,1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+header {
+  font-family: 'Cuprum' ,Arial, sans-serif;
+  width: 1350px;
+  height: 150px;
+}
+.logoimg {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  float: left;
+}
+.img-logo {
+  max-width: 50px;
+  float: left;
+}
+.img-logo a {
+	position: relative;
+	display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.img-logo span {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    max-width: 0;
+    background: #fff;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: none;
+}
+/* The navigation menu */
+.navbar {
+  background-color: transparent;
+  width: 800px;
+  height: 100px;
+  margin-left: 850px;
+  display: flex;
+  position: fixed;
+}
+
+/* Navigation links */
+.navbar > a {
+  font-size: 16px;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* The subnavigation menu */
+
+.subnavbtn:hover {
+  background: gray;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover {
+  background: transparent;
+  color: black;
+  height: 20px;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+.subnav-content {
+  background-color: transparent;
+  display: none;
+}
+.subnav-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+.subnav-content ul > li a{
+  display: block;
+  font-size: 16px;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  height: 30px;
+}
+.subnav-content ul > li a:hover {
+  background-color: #eee;
+  color: grey;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+.subnav-content:hover ul li a{
+  display: block;
+}
+.welcome {
+  width: 1350px;
+  height: 700px;
+}
+.start-text {
+  font-size: 80px;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 150px;
+  text-align: center;
+}
+.aboutme {
+  background: rgb(8,109,237);
+  background: linear-gradient(0deg, rgba(8,109,237,1) 0%, rgba(57,195,149,1) 28%, rgba(237,250,245,1) 100%, rgba(255,255,255,1) 100%);
+  height: 450px;
+  margin-top: 0;
+  margin-left: 320px;
+  margin-right: 220px;
+  justify-content: flex-start;
+  position: static;
+  display: flex;
+}
+.profile-header {
+  font-size: 40px;
+  color: #768fe8;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+}
+.skills-header {
+  font-size: 40px;
+  color: #7068cc;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+}
+.hobbie-header {
+  font-size: 40px;
+  color: #471010;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+}
+.img {
+  float:left;
+}
+.imge {
+  border-radius: 250px;
+  float: left;
+  width: 260px;
+}
+.text {
+  margin-left: 99px;
+}
+h1 {
+  margin-left: 0;
+  margin-right: 50px;
+  font-size: 25px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.description {
+  width: 350px;
+  margin-left: -60px;
+  font-size: 23px;
+  color: #b78bc7;
+  font-family: 'Dancing Script', cursive;
+  line-height: 2;
+  text-decoration: underline;
+  text-align: justify;
+}
+.word {
+  color: red;
+}
+.education {
+  width: 1100px;
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(57,66,223);
+  background: linear-gradient(0deg, rgba(57,66,223,1) 24%, rgba(242,239,233,1) 100%);
+}
+.education-header {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Montserrat', cursive;
+  color: blue;
+}
+.sc-img {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  float: left;
+  border: 4px inset blue;
+}
+.sc-text {
+  width: 660px;
+  height: 300px;
+  margin-left: 380px;
+  background-color: lightblue;
+  border-top: 3px solid blue;
+  border-right: 3px solid blue;
+}
+.un-img {
+  width: 500px;
+  height: 300px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  float: right;
+  border: 4px outset blue;
+}
+.un-text {
+  width: 450px;
+  height: 300px;
+  margin: 50px;
+  background-color: lightblue;
+  border-bottom: 3px solid blue;
+  border-left: 3px solid blue;
+}
+.un-text ul {
+  list-style: decimal;
+}
+.text-span {
+  font-size: 19px;
+  color: grey;
+  padding: 5px;
+}
+.personal {
+  width: 1100px;
+  height: 1400px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(93,14,153);
+  background: linear-gradient(0deg, rgba(93,14,153,1) 13%, rgba(242,239,233,1) 100%);
+}
+.personal ul {
+  list-style: none;
+}
+.personal ul li {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Patrick Hand', cursive;
+}
+.personal-table {
+  margin-left: 100px;
+  width: 950px;
+}
+.fig {
+  font-size: 30px;
+  font-family: 'Montserrat', cursive;
+  font-style: normal;
+  text-align: justify;
+}
+.skills-personal {
+  text-align: justify;
+  font-size: 30px;
+  font-family: 'Montserrat', cursive;
+  font-style: normal;
+}
+.programming {
+  width: 1100px;
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(112,212,212);
+  background: linear-gradient(0deg, rgba(112,212,212,1) 44%, rgba(242,239,233,1) 100%);
+}
+.programming ul {
+  list-style: none;
+}
+.programming ul li {
+  height: 130px;
+  display: block;
+}
+.programming-img {
+  float:left;
+  margin-left: 130px;
+}
+.p-languages {
+  font-size: 30px;
+  font-family: 'Cuprum', cursive;
+  color: black;
+  display: inline-block;
+  padding: 25px 25px 10px 75px;
+}
+.piano {
+  width: 1100px;
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(5,3,3);
+  background: linear-gradient(0deg, rgba(5,3,3,1) 13%, rgba(242,239,233,1) 100%);
+}
+.piano-details {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fig1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.audio {
+  margin-left: 430px;
+}
+.games-container {
+  width:1100px;
+  height:650px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  /*background: url(images/dota2bg.jpg);*/
+  background: rgb(218,48,51);
+background: linear-gradient(0deg, rgba(218,48,51,1) 24%, rgba(242,239,233,1) 100%);
+  background-repeat: no-repeat;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: url(images/csgo160x160.jpg);
+  position: absolute;
+  margin-top: auto;
+  margin-left:100px;
+  border: 10px solid #0000FF;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: url(images/dota2.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 260px;
+  border: 20px solid #FF0000;
+  padding: 20px;
+}
+.challenge-2 {
+  font-size: 35px;
+  font-family: 'Montserrat',cursive;
+  color: gold;
+  width: 500px;
+  height: 150px;
+  margin-left: 80px;
+  margin-right: 60px;
+  margin-top: 170px;
+  position: absolute;
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: url(images/lol1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 440px;
+  border: 10px solid #000000;
+  padding: 20px;
+}
+.box1-description {
+  width: 750px;
+  height: 110px;
+  background-color: white;
+  margin-left: 300px;
+  margin-top: 20px;
+  padding: 5px 15px 15px 5px;
+  position: inherit;
+}
+.box2-description {
+  width: 570px;
+  height: 130px;
+  background-color: white;
+  margin-left: 480px;
+  margin-top: 30px;
+  padding: 5px 15px 15px 5px;
+  position: inherit;
+}
+.box3-description {
+  width: 410px;
+  height: 110px;
+  background-color: white;
+  margin-left: 640px;
+  margin-top: 30px;
+  padding: 5px 15px 15px 5px;
+  position: inherit;
+}
+.game-title {
+  margin-top: -2px;
+  word-spacing: 5px;
+  font-size: 17px;
+  font-family: 'Cuprum',sans-serif;
+}
+.game-description {
+  font-size: 15px;
+  font-family: 'Montserrat' cursive;
+}
+
+.anime {
+  width: 1100px;
+  height: 1500px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(189,53,12);
+background: linear-gradient(0deg, rgba(189,53,12,1) 24%, rgba(242,239,233,1) 100%);
+}
+.anime-description {
+  width: 900px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-align: justify;
+}
+.anime-box1 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
+}
+.anime-box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.manga {
+  width: 1100px;
+  height: 2000px;
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 130px;
+  background: rgb(189,12,66);
+background: linear-gradient(0deg, rgba(189,12,66,1) 24%, rgba(242,239,233,1) 100%);
+}
+.manga-box1 {
+  display: inline-flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.manga-box {
+  display: inline-flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.manga-name {
+  height:50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Cuprum',sans-serif;
+}
+
+/* Style inputs */
+label {
+  font-size: 20px;
+  width: 25px;
+  color: white;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  width: 1330px;
+  margin-top: 100px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.message {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.links {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  width:1330px;
+  height: 200px;
+  background-color: black;
+}
+.copyright {
+  margin-left: 600px;
+  font-size: 25px;
+  font-family: 'Montserrat',cursive;
+  color: white;
+}
+.contacttext {
+  font-size: 40px;
+  font-family: 'Cuprum', sans-serif;
+}
+.contactsimg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  margin-left: 220px;
+  float: none;
+}
+.emails {
+  font-size: 15px;
+  font-family: 'Montserrat', cursive;
+  color: white;
+  text-align: center;
+}
